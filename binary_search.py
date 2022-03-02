@@ -5,9 +5,9 @@ def locate_card(cards, query):
         mid = (lo + hi) // 2
         mid_number = cards[mid]
 
-        print("lo:", lo, ", hi:", hi, ", mid:", mid, ", mid_number:", midnumber)
+        print("lo:", lo, ", hi:", hi, ", mid:", mid, ", mid_number:", mid_number)
 
-        if mid number == query:
+        if mid_number == query:
             return mid
         elif mid_number < query:
             hi = mid -1
@@ -17,3 +17,4 @@ def locate_card(cards, query):
     return -1
 
 
+print(locate_card([13, 11, 10, 7, 4, 3, 1, 0], 1))
